@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Bank Details</title>
+</head>
+<body>
+    <h1>Add Bank Details</h1>
+    <form method="POST" action="{{ url_for('add_bank_details', customer_id=customer_id) }}">
+        <div>
+            <label for="account_holder_name">Account Holder Name:</label>
+            <input type="text" id="account_holder_name" name="account_holder_name" required>
+        </div>
+        <div>
+            <label for="account_number">Account Number:</label>
+            <input type="text" id="account_number" name="account_number" required>
+        </div>
+        <div>
+            <label for="routing_number">Routing Number:</label>
+            <input type="text" id="routing_number" name="routing_number" required>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
